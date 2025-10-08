@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Novatu Software Hub</title>
+  <link rel="icon" href="logo.jpeg" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0b0f15;
+      color: #e6e6e6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(90deg, #007dc5, #009ee0);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      border-bottom: 2px solid #00c3ff;
+      box-shadow: 0 0 20px rgba(0, 180, 255, 0.4);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      animation: glowPulse 4s infinite ease-in-out;
+    }
+
+    @keyframes glowPulse {
+      0%, 100% { box-shadow: 0 0 10px rgba(0, 180, 255, 0.4); }
+      50% { box-shadow: 0 0 25px rgba(0, 180, 255, 0.8); }
+    }
+
+    header img {
+      height: 50px;
+      transition: transform 0.3s ease;
+      filter: drop-shadow(0 0 10px #00c3ff);
+    }
+
+    header img:hover {
+      transform: rotate(5deg) scale(1.1);
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      margin: 0;
+      color: #fff;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+      letter-spacing: 1px;
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    section {
+      margin-bottom: 2rem;
+      background: rgba(20, 30, 45, 0.9);
+      padding: 1.5rem;
+      border-radius: 14px;
+      box-shadow: 0 0 15px rgba(0, 150, 255, 0.2);
+      backdrop-filter: blur(6px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(0, 200, 255, 0.4);
+    }
+
+    h2 {
+      color: #00adee;
+      text-shadow: 0 0 10px rgba(0, 180, 255, 0.6);
+    }
+
+    a {
+      color: #00c3ff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #66d9ff;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #0b1118;
+      border-top: 1px solid #00adee;
+      color: #9acfe3;
+      font-size: 0.9rem;
+      box-shadow: 0 -2px 10px rgba(0, 180, 255, 0.2);
+      animation: glowPulse 5s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.jpeg" alt="Novatu Logo" />
+    <h1>Novatu Software Hub</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Welcome</h2>
+      <p>
+        This is the unofficial community hub for the <strong>Novatu NT75 Rapid Trigger Keyboard</strong>. Our goal is to
+        provide verified software links, checksums, setup guides, and community information to help ensure safe and easy use.
+      </p>
+    </section>
+
+    <section>
+      <h2>Downloads: </h2>
+      <ul>
+        <li>
+          <a href="https://drive.usercontent.google.com/download?id=1VLyyHPofoXPrs1PwXUIDnsmyx1Nq7w9h&export=download&authuser=0" download="novatu-keyboard-software.zip">Keyboard Software</a>
+        </li>
+        <!--<li> <a href="#">SHA256 Checksums</a></li>-->
+        <!--<li> <a href="#">How to verify your download</a></li>-->
+      </ul>
+    </section>
+
+    <section>
+      <h2>Community Info</h2>
+      <p>
+        Join the growing Novatu keyboard community — share feedback, report bugs, and explore customization ideas. This site
+        is made and maintained by one passionate user who wanted a safer way for others to access software.
+      </p>
+    </section>
+
+    <section>
+      <h2>Disclaimer</h2>
+      <p>
+        This website is <strong>not affiliated with or endorsed by Novatu</strong>. All Novatu trademarks and software are
+        property of their respective owners. This site only provides documentation and verification tools.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>All rights Novatu reserved — made by a 1 guy with an idea.</p>
+  </footer>
+</body>
+</html>
